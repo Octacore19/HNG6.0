@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.RegistrationFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/phoneNumberTextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="monospace"
+            android:text="@string/phone_label"
+            android:textColor="@color/colorYellow"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@id/confirmPasswordEdittext"
+            app:layout_constraintTop_toBottomOf="@id/confirmPasswordEdittext" />
+
+        <EditText
+            android:id="@+id/phoneNumberEdittext"
+            style="@android:style/Widget.Holo.EditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="phone"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/colorYellow"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/phoneNumberTextview"
+            app:layout_constraintTop_toBottomOf="@id/phoneNumberTextview" />
+
+        <TextView
+            android:id="@+id/lastnameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="monospace"
+            android:text="@string/lastname"
+            android:textColor="@color/colorYellow"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/firstnameEdittext"
+            app:layout_constraintTop_toBottomOf="@+id/firstnameEdittext" />
+
+        <EditText
+            android:id="@+id/lastnameEdittext"
+            style="@android:style/Widget.Holo.EditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/colorYellow"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/lastnameLabel"
+            app:layout_constraintTop_toBottomOf="@+id/lastnameLabel" />
+
+        <EditText
+            android:id="@+id/firstnameEdittext"
+            style="@android:style/Widget.Holo.EditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/colorYellow"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/firstnameLabel" />
+
+        <TextView
+            android:id="@+id/firstnameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="monospace"
+            android:text="@string/firstname"
+            android:textColor="@color/colorYellow"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/signupButton"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:background="@color/colorBlue"
+            android:fontFamily="monospace"
+            android:text="@string/signup_btn"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/colorYellow"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/phoneNumberEdittext"
+            app:layout_constraintStart_toStartOf="@id/phoneNumberEdittext"
+            app:layout_constraintTop_toBottomOf="@id/phoneNumberEdittext" />
+
+        <EditText
+            android:id="@+id/emailEdittext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/colorYellow"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/emailTextview"
+            app:layout_constraintTop_toBottomOf="@+id/emailTextview" />
+
+        <EditText
+            android:id="@+id/passwordEdittext"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/colorYellow"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/passwordTextview"
+            app:layout_constraintTop_toBottomOf="@+id/passwordTextview" />
+
+        <EditText
+            android:id="@+id/confirmPasswordEdittext"
+            style="@android:style/Widget.Holo.EditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/colorYellow"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/confirmPasswordTextview"
+            app:layout_constraintTop_toBottomOf="@+id/confirmPasswordTextview" />
+
+        <TextView
+            android:id="@+id/passwordTextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="monospace"
+            android:text="@string/password_label"
+            android:textColor="@color/colorYellow"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/emailEdittext"
+            app:layout_constraintTop_toBottomOf="@+id/emailEdittext" />
+
+        <TextView
+            android:id="@+id/confirmPasswordTextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="monospace"
+            android:text="@string/confirm_password_label"
+            android:textColor="@color/colorYellow"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/passwordEdittext"
+            app:layout_constraintTop_toBottomOf="@+id/passwordEdittext" />
+
+        <TextView
+            android:id="@+id/emailTextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="monospace"
+            android:text="@string/email_label"
+            android:textColor="@color/colorYellow"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lastnameEdittext" />
+
+        <TextView
+            android:id="@+id/loginPromptTextview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="monospace"
+            android:text="@string/login_prompt_msg"
+            android:textAlignment="center"
+            android:textColor="@color/colorYellow"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/signupButton"
+            app:layout_constraintStart_toStartOf="@+id/signupButton"
+            app:layout_constraintTop_toBottomOf="@+id/signupButton" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

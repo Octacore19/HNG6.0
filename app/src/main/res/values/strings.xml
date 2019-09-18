@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">HNG6.0</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="email_address">joe@mail.com</string>
+    <string name="lastname">Lastname:</string>
+    <string name="firstname">Firstname:</string>
+    <string name="logout">Logout</string>
+    <string name="octacore_logo">Octacore</string>
+    <string name="email_label">E-mail:</string>
+    <string name="password_label">Password:</string>
+    <string name="login_btn">LOG IN</string>
+    <string name="signup_prompt_msg">You don\'t have an account? Click here to sign up</string>
+    <string name="confirm_password_label">Confirm Password:</string>
+    <string name="signup_btn">SIGN UP</string>
+    <string name="login_prompt_msg">Already have an account? Click here to log in.</string>
+    <string name="welcome_text">Welcome to the world of Possibilites</string>
+    <string name="dummy_text">Just say something</string>
+    <string name="name">Name:</string>
+    <string name="phone_label">Phone Number:</string>
+    <string name="phone_number">08012345678</string>
+</resources>
